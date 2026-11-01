@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TLUX — Um utilitário que faz o seu negócio render</title>
+<meta name="description" content="Conheça o TLUX, utilitário compacto Shineray/SRM com caçamba de 3,05 m e 122 cv. Deixe seus dados e fale com um consultor pelo WhatsApp.">
+<meta property="og:title" content="TLUX — Um utilitário que faz o seu negócio render">
+<meta property="og:description" content="Caçamba de 3,05 m, 122 cv e ABS nas 4 rodas. A partir de R$ 111.990,00.">
+<meta property="og:image" content="https://amandakatherinne.github.io/landing-tlux/img/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amandakatherinne.github.io/landing-tlux/">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15181B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23BC2230'/%3E%3Cpath d='M6 8h20v5h-7.5v13h-5V13H6z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-m.jpg" media="(max-width:900px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero.jpg" media="(min-width:901px)" fetchpriority="high">
+<noscript><style>.ln>span{transform:none!important}.rv{opacity:1!important;transform:none!important}.hero-photo .ph{clip-path:none!important}.hero-photo img{opacity:1!important;transform:none!important}.tag{opacity:1!important;transform:none!important}.d{stroke-dashoffset:0!important}.svg-fade{opacity:1!important}</style></noscript>
+<style>
+/* ============ Sistema: chapa, asfalto e vermelho rubi ============ */
+:root{
+  --asfalto:#15181B; --asfalto-2:#1F2428;
+  --chapa:#E7EAEA; --chapa-2:#D9DEDF; --papel:#F4F6F6;
+  --aco:#565E63; --aco-claro:#A9B1B6;
+  --rubi:#BC2230; --rubi-fundo:#A41E2A; --rubi-escuro:#8A1620; --rubi-claro:#E5404E;
+  --linha:rgba(21,24,27,.16); --linha-clara:rgba(255,255,255,.16);
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --corpo:"Hanken Grotesk",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  --pad:clamp(20px,4.4vw,72px);
+  --nav:64px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav)}
+body{background:var(--chapa);color:var(--asfalto);font-family:var(--corpo);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--rubi-claro);outline-offset:3px}
+.on-red :focus-visible{outline-color:#fff}
+.light :focus-visible{outline-color:var(--asfalto)}
+.wrap{padding-inline:var(--pad);max-width:1480px;margin-inline:auto}
+
+/* tipografia */
+h1,h2,h3{font-family:var(--display);font-weight:800;text-transform:uppercase;line-height:.96;letter-spacing:.005em}
+h2{font-size:clamp(46px,7vw,112px);line-height:1.02}
+.hero h1{line-height:.98}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--aco)}
+.eyebrow::before{content:"";width:10px;height:10px;background:var(--rubi);flex:none}
+.dark .eyebrow::before{background:var(--rubi-claro)}
+.dark .eyebrow{color:var(--aco-claro)}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--aco);max-width:38ch}
+.dark .lead{color:var(--aco-claro)}
+mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
+
+/* revelações */
+.ln{display:block;overflow:hidden;padding:.14em 0 .04em;margin-top:-.14em}
+.ln>span{display:block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.in .ln>span,.ln.in>span{transform:none}
+.ln:nth-child(2)>span{transition-delay:.08s}.ln:nth-child(3)>span{transition-delay:.16s}.ln:nth-child(4)>span{transition-delay:.24s}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:54px;padding:0 28px;background:var(--rubi);color:#fff;font:600 16px/1 var(--corpo);letter-spacing:.01em;border:0;border-radius:2px;cursor:pointer;transition:background .25s,transform .25s var(--ease)}
+.btn:hover{background:var(--rubi-escuro)}
+.btn svg{width:20px;height:12px;transition:transform .25s var(--ease)}
+.btn:hover svg{transform:translateX(5px)}
+.btn.dark-btn{background:var(--asfalto);color:#fff}
+.btn.dark-btn:hover{background:#000}
+.btn.sm{min-height:44px;padding:0 20px;font-size:14px}
+.link{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;border-bottom:1px solid currentColor}
+
+/* progresso e navegação */
+#progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--rubi-claro);transform-origin:0 50%;transform:scaleX(0);z-index:90}
+.bar{position:fixed;inset:0 0 auto 0;height:var(--nav);z-index:80;display:flex;align-items:center;justify-content:space-between;padding-inline:var(--pad);background:rgba(21,24,27,.94);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid var(--linha-clara);transition:transform .45s var(--ease)}
+.bar.hide{transform:translateY(-101%)}
+.wordmark{display:flex;align-items:center;gap:14px;min-height:44px;min-width:44px}
+.wordmark b{font-family:var(--display);font-weight:800;font-size:32px;letter-spacing:.06em;line-height:1}
+.wordmark span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--aco-claro)}
+
+/* ============ HERO ============ */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);min-height:100svh;background:var(--asfalto);color:#fff;padding-top:var(--nav)}
+.hero-copy{display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding:clamp(36px,6vh,72px) clamp(20px,3vw,56px) 0 var(--pad)}
+.hero h1{font-size:clamp(60px,6.6vw,118px);margin-top:26px}
+.hero h1 em{font-style:normal;color:var(--rubi-claro)}
+.hero-sub{margin-top:26px;max-width:30ch;font-size:clamp(17px,1.5vw,21px);color:var(--aco-claro)}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:34px}
+.hero-actions .link{color:var(--aco-claro)}
+.hero-actions .link:hover{color:#fff}
+.strip{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0;border-top:1px solid var(--linha-clara);margin-top:8px}
+.strip li{padding:18px 28px 22px 0;margin-right:28px;border-right:1px solid var(--linha-clara);color:var(--aco-claro)}
+.strip li:last-child{border:0;margin:0}
+.strip b{display:block;color:#fff;font:500 18px/1.2 var(--mono);letter-spacing:0;margin-bottom:4px;text-transform:none}
+.hero-photo{position:relative;min-height:520px}
+.hero-photo .ph{position:absolute;inset:0;overflow:hidden;background:var(--asfalto-2);clip-path:inset(100% 0 0 0);transition:clip-path 1.5s var(--ease) .2s}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;opacity:0;transform:scale(1.12);transition:transform 2.4s var(--ease) .2s,opacity .7s ease}
+.hero-photo img.ready{opacity:1}
+.loaded .hero-photo .ph{clip-path:inset(0 0 0 0)}
+.loaded .hero-photo img{transform:scale(1)}
+.tag{position:absolute;left:clamp(-44px,-2.6vw,-20px);bottom:clamp(36px,8vh,84px);z-index:3;background:var(--rubi);color:#fff;padding:20px 34px 20px 24px;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%);box-shadow:0 18px 40px rgba(0,0,0,.28);opacity:0;transform:translateX(-18px);transition:opacity .8s var(--ease) 1.1s,transform .8s var(--ease) 1.1s}
+.loaded .tag{opacity:1;transform:none}
+.tag .mono{font-size:12px;display:block}
+.tag b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(40px,4vw,60px);line-height:1;letter-spacing:.01em;margin:4px 0 6px}
+.tag small{display:block;font-size:12px;line-height:1.35;max-width:24ch}
+
+/* ============ MANIFESTO ============ */
+.manifesto{background:var(--chapa);padding:clamp(80px,14vh,180px) 0}
+.manifesto p{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(40px,6.4vw,104px);line-height:.95;max-width:22ch}
+.manifesto .w{opacity:.16;transition:opacity .25s}
+.manifesto .w.on{opacity:1}
+
+/* ============ CAÇAMBA (desenho técnico) ============ */
+.plan{background:var(--chapa-2);background-image:linear-gradient(rgba(21,24,27,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(21,24,27,.07) 1px,transparent 1px);background-size:40px 40px;padding:clamp(72px,12vh,150px) 0;border-block:1px solid var(--linha)}
+.plan-head{display:grid;grid-template-columns:1.3fr 1fr;gap:var(--pad);align-items:end;margin-bottom:clamp(36px,6vh,72px)}
+.plan-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:clamp(20px,2.4vw,40px);align-items:stretch}
+.sheet{background:var(--papel);border:1px solid var(--asfalto);position:relative;padding:clamp(16px,2.4vw,36px) clamp(16px,2.4vw,36px) 0}
+.sheet svg{display:block;width:100%;height:auto;overflow:visible}
+.sheet .titleblock{display:grid;grid-template-columns:repeat(3,1fr);margin:clamp(10px,1.6vw,24px) calc(clamp(16px,2.4vw,36px)*-1) 0;border-top:1px solid var(--asfalto)}
+.titleblock div{padding:12px clamp(16px,2.4vw,36px);border-right:1px solid var(--asfalto)}
+.titleblock div:last-child{border:0}
+.titleblock .mono{display:block;font-size:12px;color:var(--aco)}
+.titleblock b{font:500 13px/1.35 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.fig{display:flex;flex-direction:column;border:1px solid var(--asfalto);background:var(--papel)}
+.fig .ph{flex:1;min-height:260px;overflow:hidden}
+.fig img{width:100%;height:100%;object-fit:cover}
+.fig figcaption{padding:14px 18px;border-top:1px solid var(--asfalto);color:var(--aco)}
+/* desenho */
+.d{fill:none;stroke:var(--asfalto);stroke-width:2.4;stroke-linecap:square;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.5s var(--ease)}
+.d.thin{stroke-width:1.4}
+.d.thick{stroke-width:6}
+.in .d{stroke-dashoffset:0}
+.svg-fade{opacity:0;transition:opacity .9s var(--ease) 1s}
+.in .svg-fade{opacity:1}
+.dim-tag{fill:var(--rubi);stroke:var(--asfalto);stroke-width:1.6}
+.dim-tag+.svg-t{fill:#fff}
+.svg-t{font-family:var(--mono);font-weight:500;fill:var(--asfalto);letter-spacing:.04em}
+
+/* ============ DESTAQUES ============ */
+.feat{background:var(--papel);padding:clamp(72px,12vh,150px) 0}
+.feat-head{display:grid;grid-template-columns:1.3fr 1fr;gap:var(--pad);align-items:end;margin-bottom:clamp(36px,6vh,72px)}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--linha)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--chapa-2)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.card:hover img{transform:scale(1.05)}
+.card-body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:12px;flex:1;border-top:4px solid var(--rubi)}
+.card .mono{color:var(--aco)}
+.card h3{font-size:clamp(34px,3vw,46px)}
+.card p{color:var(--aco);font-size:16px}
+.dots{display:none}
+.rv:nth-child(2){transition-delay:.08s}.rv:nth-child(3){transition-delay:.16s}.rv:nth-child(4){transition-delay:.24s}
+
+/* ============ FOTO DE PÁGINA INTEIRA ============ */
+.rua{position:relative;aspect-ratio:16/9;max-height:94vh;min-height:520px;overflow:hidden;color:#fff;display:flex;align-items:flex-end;background:var(--asfalto)}
+.rua-img{position:absolute;inset:0}
+.rua-img video{width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block;background:var(--asfalto-2)}
+.rua::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(21,24,27,.82) 0%,rgba(21,24,27,.45) 30%,rgba(21,24,27,0) 62%)}
+.rua-copy{position:relative;z-index:2;width:100%;padding-bottom:clamp(36px,7vh,84px);display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.rua h2{font-size:clamp(48px,5.4vw,96px)}
+.rua h2 em{font-style:normal;color:var(--rubi-claro)}
+
+/* ============ CABINE ============ */
+.cabin{background:var(--asfalto);color:#fff;padding:clamp(72px,12vh,150px) 0}
+.cabin-head{display:grid;grid-template-columns:1.3fr 1fr;gap:var(--pad);align-items:end;margin-bottom:clamp(36px,6vh,72px)}
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(2,clamp(200px,22vw,340px));gap:clamp(10px,1.2vw,18px)}
+.tile{position:relative;overflow:hidden;background:var(--asfalto-2)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.tile:hover img{transform:scale(1.05)}
+.tile figcaption{position:absolute;left:0;bottom:0;background:var(--rubi);color:#fff;padding:8px 14px}
+.t1{grid-column:1/8;grid-row:1/3}.t2{grid-column:8/13;grid-row:1}.t3{grid-column:8/11;grid-row:2}.t4{grid-column:11/13;grid-row:2}
+
+/* ============ ITENS DE SÉRIE ============ */
+.itens{background:var(--chapa);padding:clamp(72px,12vh,150px) 0}
+.itens-head{margin-bottom:clamp(36px,6vh,72px)}
+.series{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,22px)}
+.series li{display:flex;align-items:center;gap:18px;padding:clamp(20px,2.4vw,34px);background:var(--papel);border:1px solid var(--linha);border-left:6px solid var(--rubi);font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(28px,2.8vw,44px);line-height:1;transition:background .25s,transform .25s var(--ease)}
+.series li:hover{background:#fff;transform:translateY(-3px)}
+.series li::before{content:"";flex:none;width:22px;height:12px;border-left:4px solid var(--rubi);border-bottom:4px solid var(--rubi);transform:rotate(-45deg) translateY(-3px)}
+.itens-foot{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between;margin-top:clamp(36px,6vh,64px);padding-top:28px;border-top:1px solid var(--linha)}
+.itens-foot p{color:var(--aco);font-size:14px;max-width:60ch}
+
+/* ============ CONTATO ============ */
+.contact{background:var(--rubi-fundo);color:#fff;padding:clamp(72px,12vh,150px) 0}
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(36px,6vw,110px);align-items:start}
+.contact h2{font-size:clamp(56px,8.4vw,150px)}
+.contact .eyebrow{color:rgba(255,255,255,.85)}
+.contact .eyebrow::before{background:#fff}
+.contact .lead{color:rgba(255,255,255,.92);margin-top:24px}
+form{display:grid;gap:26px;align-content:start}
+.f{position:relative}
+.f input,.f select{width:100%;min-height:62px;background:rgba(255,255,255,.12);border:0;border-bottom:3px solid #fff;color:#fff;font:500 19px/1.2 var(--corpo);padding:26px 16px 8px;outline:none;border-radius:2px 2px 0 0;appearance:none;-webkit-appearance:none;transition:background .2s}
+.f select{background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 22px) 52%,calc(100% - 16px) 52%;background-size:6px 6px;background-repeat:no-repeat;background-color:rgba(255,255,255,.12)}
+.f select option{color:#111}
+.f label{position:absolute;left:16px;top:20px;font-size:17px;color:rgba(255,255,255,.88);pointer-events:none;transition:all .25s var(--ease)}
+.f input:focus,.f select:focus{background-color:rgba(255,255,255,.22)}
+.f input:focus+label,.f input:not(:placeholder-shown)+label,.f select:focus+label,.f select:valid+label{top:8px;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.f .msg{display:none;margin-top:8px;font-size:14px;font-weight:600;color:#fff;background:var(--rubi-escuro);padding:7px 12px;border-left:4px solid #fff}
+.f.err .msg{display:block}
+.f.err input,.f.err select{background-color:rgba(0,0,0,.24)}
+.micro{font-size:13px;color:rgba(255,255,255,.88)}
+.ok{display:none}
+.ok .tit{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(40px,4.6vw,72px);line-height:1.04;margin-bottom:18px}
+.ok .recap{font:500 13px/1.5 var(--mono);letter-spacing:.04em;margin-bottom:26px;color:rgba(255,255,255,.92)}
+.btn:disabled{opacity:.7;cursor:wait}
+.sent form{display:none}.sent .ok{display:block}
+#wa-next{display:none}
+
+footer{background:var(--asfalto);color:var(--aco-claro);font-size:13px;line-height:1.7;padding:40px 0 48px}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer p{max-width:72ch}
+footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06em;font-weight:800}
+
+/* botão fixo */
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:70;display:flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;background:var(--rubi);color:#fff;border-radius:2px;font:600 15px/1 var(--corpo);box-shadow:0 12px 32px rgba(0,0,0,.3);transform:translateY(170%);opacity:0;transition:transform .5s var(--ease),opacity .4s,background .25s}
+.fab.show{transform:none;opacity:1}
+.fab:hover{background:var(--rubi-escuro)}
+.fab svg{width:20px;height:20px}
+
+/* ============ RESPONSIVO ============ */
+@media (max-width:1100px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .series{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  :root{--nav:60px}
+  .wordmark span{display:none}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:36px var(--pad) 28px;gap:30px}
+  .hero h1{font-size:clamp(60px,17vw,110px);margin-top:20px}
+  .strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .strip li{padding:14px 10px 16px;margin:0}
+  .strip li:first-child{padding-left:0}
+  .strip b{font-size:14px}
+  .hero-photo{order:-1;min-height:0;aspect-ratio:auto;height:clamp(290px,44svh,380px)}
+  .hero-photo img{object-position:50% 62%}
+  .tag{left:0;top:0;bottom:auto;padding:10px 22px 10px var(--pad)}
+  .tag b{font-size:38px;margin:2px 0 4px}
+  .tag small{font-size:12px}
+  .plan-head,.feat-head,.cabin-head,.contact-grid{grid-template-columns:1fr}
+  .plan-grid{grid-template-columns:1fr}
+  .fig .ph{min-height:0;aspect-ratio:16/10;flex:none}
+  .rua{aspect-ratio:auto;max-height:none;height:auto;min-height:0;display:block;background:var(--asfalto)}
+  .rua-img{position:relative;aspect-ratio:16/9}
+  .rua::after{display:none}
+  .rua-copy{padding:28px var(--pad) 44px;gap:22px}
+  .rua h2{font-size:clamp(52px,14vw,90px)}
+  .manifesto{padding:56px 0}
+  .plan,.feat,.cabin,.itens,.contact{padding:56px 0}
+  .plan-head,.feat-head,.cabin-head{margin-bottom:28px;gap:14px}
+  .itens-head{margin-bottom:28px}
+  .itens-foot,.ficha-foot{margin-top:28px;padding-top:22px}
+  .contact-grid{gap:30px}
+  footer{padding:32px 0 40px}
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:clamp(150px,40vw,260px)}
+  .t1{grid-column:1/3;grid-row:auto;grid-row:span 2}.t2{grid-column:1/3;grid-row:auto}.t3,.t4{grid-column:auto;grid-row:auto}
+  .titleblock div{padding-inline:10px}
+  .manifesto p{max-width:none}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .series{grid-template-columns:1fr}
+  .svg-t{font-size:36px}
+  .dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
+  .dots i{width:8px;height:8px;background:var(--linha);transition:width .25s var(--ease),background .25s}
+  .dots i.on{width:26px;background:var(--rubi)}
+  .sheet .titleblock{grid-template-columns:1fr 1fr}
+  .titleblock div:nth-child(3){display:none}
+  .hero-actions .btn{width:100%}
+  .contact .btn{width:100%}
+  .cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);margin-inline:calc(var(--pad)*-1);padding:0 var(--pad) 8px;scrollbar-width:none}
+  .cards::-webkit-scrollbar{display:none}
+  .card{flex:0 0 80%;scroll-snap-align:start}
+  .fab{min-height:48px;font-size:14px}
+}
+@media (max-width:400px){
+  .mono{letter-spacing:.07em}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+  .ln>span,.rv,.tag{transform:none!important;opacity:1!important}
+  .hero-photo .ph{clip-path:none!important}.hero-photo img{transform:none!important}
+  .d{stroke-dashoffset:0!important}.svg-fade{opacity:1!important}
+  .manifesto .w{opacity:1}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="bar" id="menu">
+  <a href="#topo" class="wordmark" aria-label="TLUX, início"><b>TLUX</b><span>Shineray / SRM</span></a>
+  <a href="#contato" class="btn sm" data-cta="menu">Falar com consultor</a>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero dark" id="topo">
+  <div class="hero-copy">
+    <div>
+      <p class="mono eyebrow">Utilitário compacto · Shineray / SRM</p>
+      <h1>
+        <span class="ln"><span>Um utilitário</span></span>
+        <span class="ln"><span>que faz o seu</span></span>
+        <span class="ln"><span>negócio <em>render.</em></span></span>
+      </h1>
+      <p class="hero-sub rv">Potência e utilitário que te leva além.</p>
+      <div class="hero-actions rv">
+        <a href="#contato" class="btn" data-cta="hero">Quero conhecer o TLUX
+          <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 6h22M17 1l5 5-5 5"/></svg>
+        </a>
+        <a href="#itens" class="link">Ver itens de série</a>
+      </div>
+    </div>
+    <ul class="strip mono rv" aria-label="Destaques do TLUX">
+      <li><b>122,03 cv</b>potência</li>
+      <li><b>3.050 mm</b>caçamba</li>
+      <li><b>ABS 4 rodas</b>freios</li>
+    </ul>
+  </div>
+  <figure class="hero-photo">
+    <div class="ph"><picture><source media="(max-width:900px)" srcset="img/hero-m.jpg"><img src="img/hero.jpg" alt="Caminhão utilitário TLUX branco estacionado em área externa" fetchpriority="high"></picture></div>
+    <div class="tag">
+      <span class="mono">A partir de</span>
+      <b>R$ 111.990,00</b>
+      <small>Preço público sugerido, frete não incluso.</small>
+    </div>
+  </figure>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto light">
+  <div class="wrap">
+    <p id="manifesto">Quem trabalha por conta própria não precisa de um carro. Precisa de uma ferramenta.</p>
+  </div>
+</section>
+
+<!-- CAÇAMBA: desenho técnico -->
+<section class="plan light" id="cacamba">
+  <div class="wrap">
+    <div class="plan-head">
+      <div>
+        <p class="mono eyebrow rv">Caçamba</p>
+        <h2 style="margin-top:22px"><span class="ln"><span>Espaço que</span></span><span class="ln"><span>vira receita.</span></span></h2>
+      </div>
+      <p class="lead rv">Entrega, obra, feira ou campo: o mesmo espaço, mais negócio.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="sheet" id="sheet">
+        <svg viewBox="0 0 1000 745" role="img" aria-label="Desenho em escala da caçamba do TLUX, com 3.050 mm de comprimento, 1.645 mm de largura e 370 mm de altura">
+          <defs>
+            <pattern id="hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="16" stroke="#15181B" stroke-opacity=".13" stroke-width="2.2"/></pattern>
+          </defs>
+          <text class="svg-t svg-fade" x="150" y="40" font-size="30" opacity=".75">FIG. 1 · VISTA SUPERIOR</text>
+          <!-- planta -->
+          <rect class="svg-fade" x="150" y="140" width="700" height="378" fill="url(#hatch)"/>
+          <rect class="d" pathLength="1" x="150" y="140" width="700" height="378"/>
+          <rect class="d thin" pathLength="1" x="168" y="158" width="664" height="342" style="transition-delay:.3s"/>
+          <line class="d thick" pathLength="1" x1="150" y1="140" x2="150" y2="518" style="transition-delay:.5s"/>
+          <text class="svg-t svg-fade" x="190" y="340" font-size="28" opacity=".7" transform="rotate(-90 192 340)" text-anchor="middle">FRENTE · CABINE</text>
+          <!-- cota comprimento -->
+          <line class="d thin" pathLength="1" x1="150" y1="134" x2="150" y2="72" style="transition-delay:.6s"/>
+          <line class="d thin" pathLength="1" x1="850" y1="134" x2="850" y2="72" style="transition-delay:.6s"/>
+          <line class="d" pathLength="1" x1="150" y1="90" x2="850" y2="90" style="transition-delay:.8s"/>
+          <g class="svg-fade"><rect class="dim-tag" x="390" y="66" width="220" height="48"/><text class="svg-t" x="500" y="99" font-size="29" text-anchor="middle">3.050 mm</text></g>
+          <!-- cota largura -->
+          <line class="d thin" pathLength="1" x1="144" y1="140" x2="70" y2="140" style="transition-delay:.7s"/>
+          <line class="d thin" pathLength="1" x1="144" y1="518" x2="70" y2="518" style="transition-delay:.7s"/>
+          <line class="d" pathLength="1" x1="90" y1="140" x2="90" y2="518" style="transition-delay:.9s"/>
+          <g class="svg-fade" transform="rotate(-90 90 329)"><rect class="dim-tag" x="-10" y="305" width="200" height="48"/><text class="svg-t" x="90" y="338" font-size="29" text-anchor="middle">1.645 mm</text></g>
+          <!-- elevação -->
+          <text class="svg-t svg-fade" x="150" y="570" font-size="30" opacity=".75">FIG. 2 · VISTA LATERAL</text>
+          <rect class="svg-fade" x="150" y="600" width="700" height="85" fill="url(#hatch)"/>
+          <rect class="d" pathLength="1" x="150" y="600" width="700" height="85" style="transition-delay:.4s"/>
+          <line class="d thin" pathLength="1" x1="856" y1="600" x2="935" y2="600" style="transition-delay:1s"/>
+          <line class="d thin" pathLength="1" x1="856" y1="685" x2="935" y2="685" style="transition-delay:1s"/>
+          <line class="d" pathLength="1" x1="915" y1="600" x2="915" y2="685" style="transition-delay:1.1s"/>
+          <g class="svg-fade" transform="rotate(-90 915 642)"><rect class="dim-tag" x="835" y="618" width="160" height="48"/><text class="svg-t" x="915" y="651" font-size="29" text-anchor="middle">370 mm</text></g>
+        </svg>
+        <div class="titleblock mono">
+          <div><span class="mono">Desenho</span><b>Caçamba TLUX</b></div>
+          <div><span class="mono">Escala</span><b>Proporcional</b></div>
+          <div><span class="mono">Fonte</span><b>Fabricante</b></div>
+        </div>
+      </div>
+      <figure class="fig rv">
+        <div class="ph"><img src="img/item-Cacamba.webp" alt="Caçamba do TLUX vista de trás" loading="lazy"></div>
+        <figcaption class="mono">Foto real · caçamba 3050 × 1645 × 370 mm</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- DESTAQUES -->
+<section class="feat light" id="destaques">
+  <div class="wrap">
+    <div class="feat-head">
+      <div>
+        <p class="mono eyebrow rv">Dia a dia</p>
+        <h2 style="margin-top:22px"><span class="ln"><span>Feito para a</span></span><span class="ln"><span>rotina pesada.</span></span></h2>
+      </div>
+      <p class="lead rv">Freio a disco na frente, suspensão MacPherson e molas de 6 lâminas atrás.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="ph"><img src="img/galeria-5.webp" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="mono">Caçamba</span><h3>Caçamba generosa</h3><p>3,05 m de comprimento para o que o seu dia exige.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/galeria-3.webp" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="mono">Motor</span><h3>Motor 122 cv</h3><p>1.6 de 1597 cm³ para trabalhar com fôlego.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/item-Painel.webp" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="mono">Direção</span><h3>Direção elétrica</h3><p>Manobra leve, do começo ao fim da jornada.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/item-Freios-1.webp" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="mono">Freios</span><h3>ABS nas 4 rodas</h3><p>Freada firme, com a caçamba cheia ou vazia.</p></div>
+      </article>
+    </div>
+    <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- FOTO DE PÁGINA INTEIRA -->
+<section class="rua" id="rua">
+  <div class="rua-img">
+    <video id="ruaVid" muted playsinline preload="none" poster="img/caminhao-poster.jpg?v=3" aria-label="Vídeo: a caçamba do TLUX vazia recebendo garrafões de água, vidros e madeira, um tipo de carga depois do outro" data-src="img/caminhao-carga.mp4?v=2"></video>
+  </div>
+  <div class="wrap rua-copy">
+    <h2><span class="ln"><span>Aqui cabe</span></span><span class="ln"><span>o seu <em>negócio.</em></span></span></h2>
+    <a href="#contato" class="btn" data-cta="foto">Quero conhecer o TLUX
+      <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 6h22M17 1l5 5-5 5"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- CABINE -->
+<section class="cabin dark" id="cabine">
+  <div class="wrap">
+    <div class="cabin-head">
+      <div>
+        <p class="mono eyebrow rv">Cabine</p>
+        <h2 style="margin-top:22px"><span class="ln"><span>A cabine do seu</span></span><span class="ln"><span>escritório.</span></span></h2>
+      </div>
+      <p class="lead rv">Ar-condicionado, vidros elétricos e rádio AM/FM. Painel analógico claro: velocímetro, conta-giros, combustível e temperatura.</p>
+    </div>
+    <div class="bento">
+      <figure class="tile t1 rv"><img src="img/galeria-7.webp" alt="Volante e painel do TLUX" loading="lazy"><figcaption class="mono">Cabine</figcaption></figure>
+      <figure class="tile t2 rv"><img src="img/galeria-9.webp" alt="Painel analógico com velocímetro e conta-giros" loading="lazy"><figcaption class="mono">Painel analógico</figcaption></figure>
+      <figure class="tile t3 rv"><img src="img/galeria-8.webp" alt="Câmbio manual de 5 marchas" loading="lazy"><figcaption class="mono">Câmbio 5 marchas</figcaption></figure>
+      <figure class="tile t4 rv"><img src="img/galeria-10.webp" alt="Rádio AM/FM" loading="lazy"><figcaption class="mono">Rádio AM/FM</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ITENS DE SÉRIE -->
+<section class="itens light" id="itens">
+  <div class="wrap">
+    <div class="itens-head">
+      <p class="mono eyebrow rv">De série</p>
+      <h2 style="margin-top:22px"><span class="ln"><span>Itens de série.</span></span></h2>
+    </div>
+    <ul class="series">
+      <li class="rv">Ar-condicionado</li>
+      <li class="rv">Direção elétrica</li>
+      <li class="rv">Vidros elétricos</li>
+      <li class="rv">Rádio AM/FM</li>
+      <li class="rv">Carregador USB</li>
+      <li class="rv">ABS nas 4 rodas</li>
+    </ul>
+    <div class="itens-foot">
+      <p>Itens de série e especificações podem variar por versão.</p>
+      <a href="#contato" class="btn" data-cta="itens">Falar com um consultor
+        <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 6h22M17 1l5 5-5 5"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact on-red" id="contato">
+  <div class="wrap contact-grid" id="cg">
+    <div>
+      <p class="mono eyebrow">Fale com a gente</p>
+      <h2 style="margin-top:22px"><span class="ln"><span>Veja o TLUX</span></span><span class="ln"><span>trabalhando</span></span><span class="ln"><span>para você.</span></span></h2>
+      <p class="lead rv">Deixe seus dados. Um consultor fala com você pelo WhatsApp.</p>
+    </div>
+    <div>
+      <form id="lead" novalidate>
+        <div class="f"><input id="nome" name="nome" placeholder=" " autocomplete="name" required aria-describedby="e-nome"><label for="nome">Nome</label><small class="msg" id="e-nome" role="alert">Informe seu nome.</small></div>
+        <div class="f"><input id="zap" name="whatsapp" placeholder=" " inputmode="tel" autocomplete="tel" required aria-describedby="e-zap"><label for="zap">WhatsApp</label><small class="msg" id="e-zap" role="alert">Informe seu WhatsApp com DDD.</small></div>
+        <div class="f"><input id="cidade" name="cidade" placeholder=" " autocomplete="address-level2" required aria-describedby="e-cidade"><label for="cidade">Cidade</label><small class="msg" id="e-cidade" role="alert">Informe sua cidade.</small></div>
+        <div class="f"><select id="uso" name="uso" required aria-describedby="e-uso"><option value="" hidden></option><option>Entregas</option><option>Comércio</option><option>Serviços</option><option>Construção leve</option><option>Agro</option></select><label for="uso">Uso principal</label><small class="msg" id="e-uso" role="alert">Escolha o uso principal.</small></div>
+        <button class="btn dark-btn" type="submit" data-lead>Quero falar com um consultor
+          <svg viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 6h22M17 1l5 5-5 5"/></svg>
+        </button>
+        <p class="micro">Usamos seus dados só para este contato. Sem spam.</p>
+      </form>
+      <div class="ok" role="status">
+        <p class="tit">Recebido. Em breve um consultor chama você no WhatsApp.</p>
+        <p class="recap" id="recap"></p>
+        <a id="wa-next" class="btn dark-btn" target="_blank" rel="noopener">Continuar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A partir de R$ 111.990,00. Preço público sugerido, frete não incluso. Itens de série e especificações podem variar por versão. Imagens ilustrativas. Consulte um revendedor.</p>
+    <b>TLUX</b>
+  </div>
+</footer>
+
+<a id="fab" class="fab" href="#contato" data-cta="fab" aria-label="Falar com um consultor">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>
+  <span>Falar com consultor</span>
+</a>
+
+<script>
+/* ====== CONFIGURAÇÃO ======
+   WHATSAPP: número da concessionária com DDI+DDD, só dígitos (ex.: "5581999999999").
+   ENDPOINT: endereço do Apps Script da planilha (veja planilha-apps-script.gs).
+   META_PIXEL_ID, GA4_ID, GTM_ID: IDs de rastreamento (só carrega o que estiver preenchido). */
+const CONFIG = { WHATSAPP: "", ENDPOINT: "https://script.google.com/macros/s/AKfycbyt2q7xMAOW5E-AeOaKO-ybI1jCfl7oYE18mC3aDQIPFiRasi0tE8lNLFDyGM91UHOf/exec", META_PIXEL_ID: "", GA4_ID: "", GTM_ID: "" };
+
+const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ====== RASTREAMENTO ======
+   Eventos: PageView (ao abrir), Contact (clique em botão de contato), Lead (formulário enviado).
+   Nome e telefone nunca vão para Pixel/Analytics; só uso e cidade. */
+(function(){
+  const {META_PIXEL_ID:px,GA4_ID:ga,GTM_ID:gtm}=CONFIG;
+  window.dataLayer=window.dataLayer||[];
+  if(px){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',px);fbq('track','PageView')}
+  if(ga){const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+ga;document.head.appendChild(s);window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',ga)}
+  if(gtm){dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id='+gtm;document.head.appendChild(s)}
+})();
+function track(evt,params={}){
+  const [fb,g]={lead:['Lead','generate_lead'],contact:['Contact','click_cta']}[evt]||[evt,evt];
+  try{window.fbq&&fbq('track',fb,params)}catch(_){}
+  try{window.gtag&&gtag('event',g,params)}catch(_){}
+  try{window.dataLayer.push({event:'tlux_'+evt,...params})}catch(_){}
+}
+const utm={};new URLSearchParams(location.search).forEach((v,k)=>{if(/^(utm_|fbclid$|gclid$)/.test(k))utm[k]=v});
+$$('[data-cta]').forEach(a=>a.addEventListener('click',()=>track('contact',{cta:a.dataset.cta})));
+
+/* botão fixo vira WhatsApp direto quando houver número */
+const fab=$('#fab');
+if(CONFIG.WHATSAPP){
+  fab.href=`https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent('Olá! Tenho interesse no TLUX.')}`;
+  fab.target='_blank';fab.rel='noopener';
+  $('span',fab).textContent='Chamar no WhatsApp';
+}
+
+/* entrada: não espera a página inteira; só as fontes (no máximo 1,2 s) */
+const hp=$('.hero-photo img');
+const showPhoto=()=>hp.classList.add('ready');
+hp.complete&&hp.naturalWidth?showPhoto():hp.addEventListener('load',showPhoto);
+function start(){
+  if(document.body.classList.contains('loaded'))return;
+  document.body.classList.add('loaded');
+  $$('.hero .ln').forEach(l=>l.classList.add('in'));
+  $$('.hero .rv').forEach((f,i)=>setTimeout(()=>f.classList.add('in'),500+i*140));
+}
+Promise.race([document.fonts?document.fonts.ready:Promise.resolve(),new Promise(r=>setTimeout(r,1200))]).then(start);
+setTimeout(start,2500);
+if(reduce)start();
+
+/* revelações ao rolar */
+const alvos=$$('.rv:not(.hero .rv),.plan h2,.feat h2,.rua h2,.cabin h2,.itens h2,.contact h2,#sheet');
+if(window.IntersectionObserver){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.18});
+  alvos.forEach(el=>io.observe(el));
+}else{alvos.forEach(el=>el.classList.add('in'))}
+
+/* manifesto: as palavras acendem com a rolagem */
+const man=$('#manifesto');
+man.innerHTML=man.textContent.split(' ').map(w=>`<span class="w">${w}</span>`).join(' ');
+const words=$$('.w',man);
+
+/* barra, menu, botão fixo, manifesto e parallax */
+const prog=$('#progress'), menu=$('#menu'), ruaSec=$('#rua');
+let lastY=scrollY, ticking=false;
+function onScroll(){
+  const y=scrollY, H=innerHeight, doc=document.documentElement.scrollHeight-H;
+  prog.style.transform=`scaleX(${doc>0?y/doc:0})`;
+  menu.classList.toggle('hide',y>80&&y>lastY+4);
+  if(y<lastY-4||y<80)menu.classList.remove('hide');
+  const ctaVisible=[...$$('[data-cta]:not(#fab)'),$('#sheet')].some(b=>{const r=b.getBoundingClientRect();return r.bottom>0&&r.top<H});
+  fab.classList.toggle('show',y>H*.8&&!ctaVisible&&$('#contato').getBoundingClientRect().top>H*.55);
+  lastY=y;
+  const r=man.getBoundingClientRect(), p=Math.min(1,Math.max(0,(H*.85-r.top)/(H*.5+r.height*.6)));
+  const n=reduce?words.length:Math.round(p*words.length);
+  words.forEach((w,i)=>w.classList.toggle('on',i<n));
+  ticking=false;
+}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+addEventListener('resize',onScroll);
+onScroll();
+
+/* vídeo da caçamba: carrega perto da tela, toca uma vez ao aparecer e termina com a caçamba cheia */
+const vid=$('#ruaVid');
+if(vid&&window.IntersectionObserver){
+  let carregado=false;
+  const carregar=()=>{if(carregado)return;carregado=true;vid.src=vid.dataset.src;vid.load()};
+  new IntersectionObserver(es=>{if(es[0].isIntersecting)carregar()},{rootMargin:'900px 0px'}).observe(vid);
+  if(reduce){
+    carregar();
+    vid.addEventListener('loadedmetadata',()=>{try{vid.currentTime=Math.max(0,vid.duration-.05)}catch(_){}},{once:true});
+  }else{
+    new IntersectionObserver(es=>{
+      const e=es[0];
+      if(e.intersectionRatio>=.5){carregar();if(vid.paused&&(vid.ended||vid.currentTime<.1)){const p=vid.play();p&&p.catch(()=>{})}}
+      else if(e.intersectionRatio<.05&&carregado){vid.pause();try{vid.currentTime=0}catch(_){}}
+    },{threshold:[0,.05,.5]}).observe(vid);
+  }
+}
+
+/* formulário */
+const campos=[['nome',v=>v.trim().length>1],['zap',v=>v.replace(/\D/g,'').length>=10],['cidade',v=>v.trim().length>1],['uso',v=>!!v]];
+$('#zap').addEventListener('input',e=>{
+  let v=e.target.value.replace(/\D/g,'').slice(0,11);
+  v=v.replace(/^(\d{2})(\d)/,'($1) $2').replace(/(\d{5})(\d{1,4})$/,'$1-$2');
+  e.target.value=v;
+});
+campos.forEach(([id])=>{const el=$('#'+id);const clear=()=>{el.closest('.f').classList.remove('err');el.removeAttribute('aria-invalid')};el.addEventListener('input',clear);el.addEventListener('change',clear)});
+let enviando=false;
+$('#lead').addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(enviando)return;
+  const d=Object.fromEntries(new FormData(e.target));
+  let first=null;
+  campos.forEach(([id,ok])=>{
+    const el=$('#'+id), bad=!ok($('#'+id).value);
+    el.closest('.f').classList.toggle('err',bad);
+    if(bad){el.setAttribute('aria-invalid','true');first=first||el}
+  });
+  if(first){
+    /* no celular não abre o teclado: mostra os erros e leva a tela até eles */
+    if(matchMedia('(pointer:fine)').matches)first.focus({preventScroll:true});
+    first.closest('.f').scrollIntoView({block:'center',behavior:reduce?'auto':'smooth'});
+    return;
+  }
+  enviando=true;
+  const btn=$('[data-lead]');btn.disabled=true;btn.setAttribute('aria-busy','true');btn.firstChild.textContent='Enviando… ';
+  if(CONFIG.ENDPOINT){try{await fetch(CONFIG.ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({...d,...utm,origem:'lp-tlux',data:new Date().toISOString()})})}catch(_){}}
+  $('#recap').textContent=`Seus dados: ${d.nome.trim()} · ${d.cidade.trim()} · ${d.uso} · ${d.whatsapp}`;
+  $('#cg').classList.add('sent');
+  $('.ok').scrollIntoView({block:'center',behavior:reduce?'auto':'smooth'});
+  track('lead',{uso:d.uso,cidade:d.cidade.trim()});
+  if(CONFIG.WHATSAPP){
+    const m=`Olá! Sou ${d.nome.trim()}, de ${d.cidade.trim()}. Tenho interesse no TLUX para ${d.uso.toLowerCase()}. Meu WhatsApp: ${d.whatsapp}.`;
+    const link=`https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(m)}`;
+    const a=$('#wa-next');a.href=link;a.style.display='inline-flex';
+    setTimeout(()=>open(link,'_blank'),900);
+  }
+});
+
+/* indicador do carrossel de destaques (celular) */
+const cardsEl=$('.cards'), dots=$$('.dots i');
+if(cardsEl&&dots.length){
+  const upd=()=>{const c=$$('.card',cardsEl);const w=c[0].getBoundingClientRect().width+12;const i=Math.min(c.length-1,Math.max(0,Math.round(cardsEl.scrollLeft/w)));dots.forEach((d,k)=>d.classList.toggle('on',k===i))};
+  cardsEl.addEventListener('scroll',upd,{passive:true});upd();
+}
+</script>
+</body>
+</html>
