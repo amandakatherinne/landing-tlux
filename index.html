@@ -4,15 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TLUX — Um utilitário que faz o seu negócio render</title>
-<meta name="description" content="Conheça o TLUX, utilitário compacto Shineray/SRM com caçamba de 3,05 m e 122 cv. Deixe seus dados e fale com um consultor pelo WhatsApp.">
+<meta name="description" content="Conheça o TLUX, utilitário compacto Shineray/SRM com carroceria de 3,05 m e 122 cv. Informe seus dados e fale com um consultor pelo WhatsApp.">
 <meta property="og:title" content="TLUX — Um utilitário que faz o seu negócio render">
-<meta property="og:description" content="Caçamba de 3,05 m, 122 cv e ABS nas 4 rodas. A partir de R$ 111.990,00.">
+<meta property="og:description" content="Carroceria de 3,05 m, 122 cv e ABS nas 4 rodas. A partir de R$ 119.990,00.">
 <meta property="og:image" content="https://amandakatherinne.github.io/landing-tlux/img/hero.jpg">
-<meta property="og:type" content="website">
 <meta property="og:url" content="https://amandakatherinne.github.io/landing-tlux/">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#15181B">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23BC2230'/%3E%3Cpath d='M6 8h20v5h-7.5v13h-5V13H6z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0070'/%3E%3Cpath d='M6 8h20v5h-7.5v13h-5V13H6z' fill='%23FFFFFF'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,12 +19,12 @@
 <link rel="preload" as="image" href="img/hero.jpg" media="(min-width:901px)" fetchpriority="high">
 <noscript><style>.ln>span{transform:none!important}.rv{opacity:1!important;transform:none!important}.hero-photo .ph{clip-path:none!important}.hero-photo img{opacity:1!important;transform:none!important}.tag{opacity:1!important;transform:none!important}.d{stroke-dashoffset:0!important}.svg-fade{opacity:1!important}</style></noscript>
 <style>
-/* ============ Sistema: chapa, asfalto e vermelho rubi ============ */
+/* ============ Sistema: chapa, asfalto e azul da marca ============ */
 :root{
   --asfalto:#15181B; --asfalto-2:#1F2428;
   --chapa:#E7EAEA; --chapa-2:#D9DEDF; --papel:#F4F6F6;
   --aco:#565E63; --aco-claro:#A9B1B6;
-  --rubi:#BC2230; --rubi-fundo:#A41E2A; --rubi-escuro:#8A1620; --rubi-claro:#E5404E;
+  --azul:#0A0070; --azul-fundo:#0A0070; --azul-escuro:#050040; --azul-vivo:#2B22C8; --azul-claro:#8C98FF;
   --linha:rgba(21,24,27,.16); --linha-clara:rgba(255,255,255,.16);
   --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
   --corpo:"Hanken Grotesk",system-ui,sans-serif;
@@ -33,6 +32,7 @@
   --ease:cubic-bezier(.2,.7,.1,1);
   --pad:clamp(20px,4.4vw,72px);
   --nav:64px;
+  --gutter:max(var(--pad),calc((100vw - 1480px)/2 + var(--pad)));
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:var(--nav)}
@@ -40,7 +40,7 @@ body{background:var(--chapa);color:var(--asfalto);font-family:var(--corpo);font-
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
-:focus-visible{outline:3px solid var(--rubi-claro);outline-offset:3px}
+:focus-visible{outline:3px solid var(--azul-claro);outline-offset:3px}
 .on-red :focus-visible{outline-color:#fff}
 .light :focus-visible{outline-color:var(--asfalto)}
 .wrap{padding-inline:var(--pad);max-width:1480px;margin-inline:auto}
@@ -51,12 +51,12 @@ h2{font-size:clamp(46px,7vw,112px);line-height:1.02}
 .hero h1{line-height:.98}
 .mono{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
 .eyebrow{display:flex;align-items:center;gap:10px;color:var(--aco)}
-.eyebrow::before{content:"";width:10px;height:10px;background:var(--rubi);flex:none}
-.dark .eyebrow::before{background:var(--rubi-claro)}
+.eyebrow::before{content:"";width:10px;height:10px;background:var(--azul);flex:none}
+.dark .eyebrow::before{background:var(--azul-claro)}
 .dark .eyebrow{color:var(--aco-claro)}
 .lead{font-size:clamp(17px,1.4vw,20px);color:var(--aco);max-width:38ch}
 .dark .lead{color:var(--aco-claro)}
-mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
+mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--azul)}
 
 /* revelações */
 .ln{display:block;overflow:hidden;padding:.14em 0 .04em;margin-top:-.14em}
@@ -67,8 +67,8 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .rv.in{opacity:1;transform:none}
 
 /* botões */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:54px;padding:0 28px;background:var(--rubi);color:#fff;font:600 16px/1 var(--corpo);letter-spacing:.01em;border:0;border-radius:2px;cursor:pointer;transition:background .25s,transform .25s var(--ease)}
-.btn:hover{background:var(--rubi-escuro)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:54px;padding:0 28px;background:var(--azul-vivo);color:#fff;font:600 16px/1 var(--corpo);letter-spacing:.01em;border:0;border-radius:2px;cursor:pointer;transition:background .25s,transform .25s var(--ease)}
+.btn:hover{background:#fff;color:var(--azul)}
 .btn svg{width:20px;height:12px;transition:transform .25s var(--ease)}
 .btn:hover svg{transform:translateX(5px)}
 .btn.dark-btn{background:var(--asfalto);color:#fff}
@@ -77,18 +77,17 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .link{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;border-bottom:1px solid currentColor}
 
 /* progresso e navegação */
-#progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--rubi-claro);transform-origin:0 50%;transform:scaleX(0);z-index:90}
-.bar{position:fixed;inset:0 0 auto 0;height:var(--nav);z-index:80;display:flex;align-items:center;justify-content:space-between;padding-inline:var(--pad);background:rgba(21,24,27,.94);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid var(--linha-clara);transition:transform .45s var(--ease)}
+#progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--azul-claro);transform-origin:0 50%;transform:scaleX(0);z-index:90}
+.bar{position:fixed;inset:0 0 auto 0;height:var(--nav);z-index:80;display:flex;align-items:center;justify-content:space-between;padding-inline:var(--gutter);background:rgba(21,24,27,.94);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid var(--linha-clara);transition:transform .45s var(--ease)}
 .bar.hide{transform:translateY(-101%)}
-.wordmark{display:flex;align-items:center;gap:14px;min-height:44px;min-width:44px}
-.wordmark b{font-family:var(--display);font-weight:800;font-size:32px;letter-spacing:.06em;line-height:1}
-.wordmark span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--aco-claro)}
+.wordmark{display:flex;align-items:center;min-height:44px;min-width:44px}
+.wordmark img{height:44px;width:auto;display:block}
 
 /* ============ HERO ============ */
 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);min-height:100svh;background:var(--asfalto);color:#fff;padding-top:var(--nav)}
-.hero-copy{display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding:clamp(36px,6vh,72px) clamp(20px,3vw,56px) 0 var(--pad)}
+.hero-copy{display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding:clamp(36px,6vh,72px) clamp(20px,3vw,56px) 0 var(--gutter)}
 .hero h1{font-size:clamp(60px,6.6vw,118px);margin-top:26px}
-.hero h1 em{font-style:normal;color:var(--rubi-claro)}
+.hero h1 em{font-style:normal;color:var(--azul-claro)}
 .hero-sub{margin-top:26px;max-width:30ch;font-size:clamp(17px,1.5vw,21px);color:var(--aco-claro)}
 .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:34px}
 .hero-actions .link{color:var(--aco-claro)}
@@ -103,7 +102,7 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .hero-photo img.ready{opacity:1}
 .loaded .hero-photo .ph{clip-path:inset(0 0 0 0)}
 .loaded .hero-photo img{transform:scale(1)}
-.tag{position:absolute;left:clamp(-44px,-2.6vw,-20px);bottom:clamp(36px,8vh,84px);z-index:3;background:var(--rubi);color:#fff;padding:20px 34px 20px 24px;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%);box-shadow:0 18px 40px rgba(0,0,0,.28);opacity:0;transform:translateX(-18px);transition:opacity .8s var(--ease) 1.1s,transform .8s var(--ease) 1.1s}
+.tag{position:absolute;left:clamp(-44px,-2.6vw,-20px);bottom:clamp(36px,8vh,84px);z-index:3;background:var(--azul);color:#fff;padding:20px 34px 20px 24px;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%);box-shadow:0 18px 40px rgba(0,0,0,.28);opacity:0;transform:translateX(-18px);transition:opacity .8s var(--ease) 1.1s,transform .8s var(--ease) 1.1s}
 .loaded .tag{opacity:1;transform:none}
 .tag .mono{font-size:12px;display:block}
 .tag b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(40px,4vw,60px);line-height:1;letter-spacing:.01em;margin:4px 0 6px}
@@ -115,7 +114,7 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .manifesto .w{opacity:.16;transition:opacity .25s}
 .manifesto .w.on{opacity:1}
 
-/* ============ CAÇAMBA (desenho técnico) ============ */
+/* ============ CARROCERIA (desenho técnico) ============ */
 .plan{background:var(--chapa-2);background-image:linear-gradient(rgba(21,24,27,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(21,24,27,.07) 1px,transparent 1px);background-size:40px 40px;padding:clamp(72px,12vh,150px) 0;border-block:1px solid var(--linha)}
 .plan-head{display:grid;grid-template-columns:1.3fr 1fr;gap:var(--pad);align-items:end;margin-bottom:clamp(36px,6vh,72px)}
 .plan-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:clamp(20px,2.4vw,40px);align-items:stretch}
@@ -127,8 +126,17 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .titleblock .mono{display:block;font-size:12px;color:var(--aco)}
 .titleblock b{font:500 13px/1.35 var(--mono);letter-spacing:.04em;text-transform:uppercase}
 .fig{display:flex;flex-direction:column;border:1px solid var(--asfalto);background:var(--papel)}
-.fig .ph{flex:1;min-height:260px;overflow:hidden}
-.fig img{width:100%;height:100%;object-fit:cover}
+.fig .ph{flex:1;min-height:260px;overflow:hidden;position:relative}
+.fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s var(--ease)}
+.fig img.on{opacity:1}
+.fig .ph::before{content:"";position:absolute;inset:-24px;background:url("img/bau.jpg") center/cover;filter:blur(22px) brightness(.9);opacity:0;transition:opacity .45s var(--ease)}
+.fig .ph.bau::before{opacity:1}
+.fig img[data-v="bau"]{object-fit:contain;transform:scale(1.3);transform-origin:50% 56%}
+.fig-tabs{display:flex;border-bottom:1px solid var(--asfalto)}
+.fig-tabs button{flex:1;min-height:48px;padding:0 12px;background:transparent;border:0;border-right:1px solid var(--asfalto);font:500 13px/1.2 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--aco);cursor:pointer;transition:background .25s,color .25s}
+.fig-tabs button:last-child{border-right:0}
+.fig-tabs button:hover{background:#fff;color:var(--asfalto)}
+.fig-tabs button[aria-selected="true"]{background:var(--azul);color:#fff}
 .fig figcaption{padding:14px 18px;border-top:1px solid var(--asfalto);color:var(--aco)}
 /* desenho */
 .d{fill:none;stroke:var(--asfalto);stroke-width:2.4;stroke-linecap:square;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.5s var(--ease)}
@@ -137,7 +145,7 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .in .d{stroke-dashoffset:0}
 .svg-fade{opacity:0;transition:opacity .9s var(--ease) 1s}
 .in .svg-fade{opacity:1}
-.dim-tag{fill:var(--rubi);stroke:var(--asfalto);stroke-width:1.6}
+.dim-tag{fill:var(--azul);stroke:var(--asfalto);stroke-width:1.6}
 .dim-tag+.svg-t{fill:#fff}
 .svg-t{font-family:var(--mono);font-weight:500;fill:var(--asfalto);letter-spacing:.04em}
 
@@ -149,10 +157,11 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--chapa-2)}
 .card img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
 .card:hover img{transform:scale(1.05)}
-.card-body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:12px;flex:1;border-top:4px solid var(--rubi)}
+.card-body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:12px;flex:1;border-top:4px solid var(--azul)}
 .card .mono{color:var(--aco)}
 .card h3{font-size:clamp(34px,3vw,46px)}
 .card p{color:var(--aco);font-size:16px}
+.card h3 .sub{display:block;margin-top:8px;font-size:.52em;line-height:1.1;letter-spacing:.03em;color:var(--azul)}
 .dots{display:none}
 .rv:nth-child(2){transition-delay:.08s}.rv:nth-child(3){transition-delay:.16s}.rv:nth-child(4){transition-delay:.24s}
 
@@ -163,7 +172,7 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .rua::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(21,24,27,.82) 0%,rgba(21,24,27,.45) 30%,rgba(21,24,27,0) 62%)}
 .rua-copy{position:relative;z-index:2;width:100%;padding-bottom:clamp(36px,7vh,84px);display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
 .rua h2{font-size:clamp(48px,5.4vw,96px)}
-.rua h2 em{font-style:normal;color:var(--rubi-claro)}
+.rua h2 em{font-style:normal;color:var(--azul-claro)}
 
 /* ============ CABINE ============ */
 .cabin{background:var(--asfalto);color:#fff;padding:clamp(72px,12vh,150px) 0}
@@ -172,21 +181,21 @@ mark{background:none;color:inherit;box-shadow:inset 0 -.22em 0 var(--rubi)}
 .tile{position:relative;overflow:hidden;background:var(--asfalto-2)}
 .tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
 .tile:hover img{transform:scale(1.05)}
-.tile figcaption{position:absolute;left:0;bottom:0;background:var(--rubi);color:#fff;padding:8px 14px}
-.t1{grid-column:1/8;grid-row:1/3}.t2{grid-column:8/13;grid-row:1}.t3{grid-column:8/11;grid-row:2}.t4{grid-column:11/13;grid-row:2}
+.tile figcaption{position:absolute;left:0;bottom:0;background:var(--azul);color:#fff;padding:8px 14px}
+.t1{grid-column:1/8;grid-row:1/3}.t3{grid-column:8/13;grid-row:1}.t4{grid-column:8/13;grid-row:2}
 
 /* ============ ITENS DE SÉRIE ============ */
 .itens{background:var(--chapa);padding:clamp(72px,12vh,150px) 0}
 .itens-head{margin-bottom:clamp(36px,6vh,72px)}
 .series{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,22px)}
-.series li{display:flex;align-items:center;gap:18px;padding:clamp(20px,2.4vw,34px);background:var(--papel);border:1px solid var(--linha);border-left:6px solid var(--rubi);font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(28px,2.8vw,44px);line-height:1;transition:background .25s,transform .25s var(--ease)}
+.series li{display:flex;align-items:center;gap:18px;padding:clamp(20px,2.4vw,34px);background:var(--papel);border:1px solid var(--linha);border-left:6px solid var(--azul);font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(28px,2.8vw,44px);line-height:1;transition:background .25s,transform .25s var(--ease)}
 .series li:hover{background:#fff;transform:translateY(-3px)}
-.series li::before{content:"";flex:none;width:22px;height:12px;border-left:4px solid var(--rubi);border-bottom:4px solid var(--rubi);transform:rotate(-45deg) translateY(-3px)}
+.series li::before{content:"";flex:none;width:22px;height:12px;border-left:4px solid var(--azul);border-bottom:4px solid var(--azul);transform:rotate(-45deg) translateY(-3px)}
 .itens-foot{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between;margin-top:clamp(36px,6vh,64px);padding-top:28px;border-top:1px solid var(--linha)}
 .itens-foot p{color:var(--aco);font-size:14px;max-width:60ch}
 
 /* ============ CONTATO ============ */
-.contact{background:var(--rubi-fundo);color:#fff;padding:clamp(72px,12vh,150px) 0}
+.contact{background:var(--azul-fundo);color:#fff;padding:clamp(72px,12vh,150px) 0}
 .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(36px,6vw,110px);align-items:start}
 .contact h2{font-size:clamp(56px,8.4vw,150px)}
 .contact .eyebrow{color:rgba(255,255,255,.85)}
@@ -200,7 +209,7 @@ form{display:grid;gap:26px;align-content:start}
 .f label{position:absolute;left:16px;top:20px;font-size:17px;color:rgba(255,255,255,.88);pointer-events:none;transition:all .25s var(--ease)}
 .f input:focus,.f select:focus{background-color:rgba(255,255,255,.22)}
 .f input:focus+label,.f input:not(:placeholder-shown)+label,.f select:focus+label,.f select:valid+label{top:8px;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase}
-.f .msg{display:none;margin-top:8px;font-size:14px;font-weight:600;color:#fff;background:var(--rubi-escuro);padding:7px 12px;border-left:4px solid #fff}
+.f .msg{display:none;margin-top:8px;font-size:14px;font-weight:600;color:#fff;background:var(--azul-escuro);padding:7px 12px;border-left:4px solid #fff}
 .f.err .msg{display:block}
 .f.err input,.f.err select{background-color:rgba(0,0,0,.24)}
 .micro{font-size:13px;color:rgba(255,255,255,.88)}
@@ -211,25 +220,29 @@ form{display:grid;gap:26px;align-content:start}
 .sent form{display:none}.sent .ok{display:block}
 #wa-next{display:none}
 
-footer{background:var(--asfalto);color:var(--aco-claro);font-size:13px;line-height:1.7;padding:40px 0 48px}
+footer{background:var(--asfalto);color:var(--aco-claro);font-size:13px;line-height:1.7;padding:40px 0 100px}
 footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
 footer p{max-width:72ch}
-footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06em;font-weight:800}
+footer .foot-logo{height:44px;width:auto;align-self:flex-start;margin-left:auto}
 
 /* botão fixo */
-.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:70;display:flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;background:var(--rubi);color:#fff;border-radius:2px;font:600 15px/1 var(--corpo);box-shadow:0 12px 32px rgba(0,0,0,.3);transform:translateY(170%);opacity:0;transition:transform .5s var(--ease),opacity .4s,background .25s}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:70;display:flex;align-items:center;gap:10px;height:56px;min-width:56px;padding:0 22px 0 16px;background:#1FAF58;color:#fff;border-radius:999px;font:600 15px/1 var(--corpo);box-shadow:0 10px 28px rgba(0,0,0,.32);transform:translateY(160%);opacity:0;transition:transform .5s var(--ease),opacity .4s,background .25s}
 .fab.show{transform:none;opacity:1}
-.fab:hover{background:var(--rubi-escuro)}
-.fab svg{width:20px;height:20px}
+.fab:hover{background:#17924A}
+.fab svg{width:28px;height:28px;flex:none}
 
 /* ============ RESPONSIVO ============ */
+@media (min-width:901px) and (max-width:1100px){
+  .strip li{padding-right:16px;margin-right:16px}
+  .strip b{white-space:nowrap;font-size:16px}
+}
 @media (max-width:1100px){
   .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
   .series{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:900px){
   :root{--nav:60px}
-  .wordmark span{display:none}
+  .wordmark img{height:32px}
   .hero{grid-template-columns:1fr;min-height:0}
   .hero-copy{padding:36px var(--pad) 28px;gap:30px}
   .hero h1{font-size:clamp(60px,17vw,110px);margin-top:20px}
@@ -256,9 +269,9 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
   .itens-head{margin-bottom:28px}
   .itens-foot,.ficha-foot{margin-top:28px;padding-top:22px}
   .contact-grid{gap:30px}
-  footer{padding:32px 0 40px}
+  footer{padding:32px 0 100px}
   .bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:clamp(150px,40vw,260px)}
-  .t1{grid-column:1/3;grid-row:auto;grid-row:span 2}.t2{grid-column:1/3;grid-row:auto}.t3,.t4{grid-column:auto;grid-row:auto}
+  .t1{grid-column:1/3;grid-row:auto;grid-row:span 2}.t3,.t4{grid-column:auto;grid-row:auto}
   .titleblock div{padding-inline:10px}
   .manifesto p{max-width:none}
 }
@@ -268,7 +281,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
   .svg-t{font-size:36px}
   .dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
   .dots i{width:8px;height:8px;background:var(--linha);transition:width .25s var(--ease),background .25s}
-  .dots i.on{width:26px;background:var(--rubi)}
+  .dots i.on{width:26px;background:var(--azul)}
   .sheet .titleblock{grid-template-columns:1fr 1fr}
   .titleblock div:nth-child(3){display:none}
   .hero-actions .btn{width:100%}
@@ -276,10 +289,16 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
   .cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);margin-inline:calc(var(--pad)*-1);padding:0 var(--pad) 8px;scrollbar-width:none}
   .cards::-webkit-scrollbar{display:none}
   .card{flex:0 0 80%;scroll-snap-align:start}
-  .fab{min-height:48px;font-size:14px}
+  .fab{padding:0;width:56px;justify-content:center}
+  .fab span{display:none}
 }
 @media (max-width:400px){
   .mono{letter-spacing:.07em}
+}
+@media (max-width:360px){
+  .wordmark img{height:28px}
+  .bar .btn{white-space:nowrap;padding:0 14px;font-size:13px}
+  .bar{gap:10px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -295,7 +314,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
 <div id="progress"></div>
 
 <header class="bar" id="menu">
-  <a href="#topo" class="wordmark" aria-label="TLUX, início"><b>TLUX</b><span>Shineray / SRM</span></a>
+  <a href="#topo" class="wordmark" aria-label="Motudo SRM, início"><img src="img/logo-branca.png" alt="Motudo SRM" width="900" height="257"></a>
   <a href="#contato" class="btn sm" data-cta="menu">Falar com consultor</a>
 </header>
 
@@ -320,7 +339,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
     </div>
     <ul class="strip mono rv" aria-label="Destaques do TLUX">
       <li><b>122,03 cv</b>potência</li>
-      <li><b>3.050 mm</b>caçamba</li>
+      <li><b>3.050 mm</b>carroceria</li>
       <li><b>ABS 4 rodas</b>freios</li>
     </ul>
   </div>
@@ -328,7 +347,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
     <div class="ph"><picture><source media="(max-width:900px)" srcset="img/hero-m.jpg"><img src="img/hero.jpg" alt="Caminhão utilitário TLUX branco estacionado em área externa" fetchpriority="high"></picture></div>
     <div class="tag">
       <span class="mono">A partir de</span>
-      <b>R$ 111.990,00</b>
+      <b>R$ 119.990,00</b>
       <small>Preço público sugerido, frete não incluso.</small>
     </div>
   </figure>
@@ -341,19 +360,19 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
   </div>
 </section>
 
-<!-- CAÇAMBA: desenho técnico -->
+<!-- CARROCERIA: desenho técnico -->
 <section class="plan light" id="cacamba">
   <div class="wrap">
     <div class="plan-head">
       <div>
-        <p class="mono eyebrow rv">Caçamba</p>
+        <p class="mono eyebrow rv">Carroceria</p>
         <h2 style="margin-top:22px"><span class="ln"><span>Espaço que</span></span><span class="ln"><span>vira receita.</span></span></h2>
       </div>
       <p class="lead rv">Entrega, obra, feira ou campo: o mesmo espaço, mais negócio.</p>
     </div>
     <div class="plan-grid">
       <div class="sheet" id="sheet">
-        <svg viewBox="0 0 1000 745" role="img" aria-label="Desenho em escala da caçamba do TLUX, com 3.050 mm de comprimento, 1.645 mm de largura e 370 mm de altura">
+        <svg viewBox="0 0 1000 745" role="img" aria-label="Desenho em escala da carroceria do TLUX, com 3.050 mm de comprimento, 1.645 mm de largura e 370 mm de altura">
           <defs>
             <pattern id="hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="16" stroke="#15181B" stroke-opacity=".13" stroke-width="2.2"/></pattern>
           </defs>
@@ -384,14 +403,21 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
           <g class="svg-fade" transform="rotate(-90 915 642)"><rect class="dim-tag" x="835" y="618" width="160" height="48"/><text class="svg-t" x="915" y="651" font-size="29" text-anchor="middle">370 mm</text></g>
         </svg>
         <div class="titleblock mono">
-          <div><span class="mono">Desenho</span><b>Caçamba TLUX</b></div>
+          <div><span class="mono">Desenho</span><b>Carroceria TLUX</b></div>
           <div><span class="mono">Escala</span><b>Proporcional</b></div>
           <div><span class="mono">Fonte</span><b>Fabricante</b></div>
         </div>
       </div>
-      <figure class="fig rv">
-        <div class="ph"><img src="img/item-Cacamba.webp" alt="Caçamba do TLUX vista de trás" loading="lazy"></div>
-        <figcaption class="mono">Foto real · caçamba 3050 × 1645 × 370 mm</figcaption>
+      <figure class="fig rv" id="figCacamba">
+        <div class="fig-tabs" role="tablist" aria-label="Tipo de carroceria">
+          <button type="button" role="tab" id="tab-aberta" aria-selected="true" aria-controls="foto-cacamba" data-v="aberta">Carroceria aberta</button>
+          <button type="button" role="tab" id="tab-bau" aria-selected="false" aria-controls="foto-cacamba" data-v="bau">Baú</button>
+        </div>
+        <div class="ph" id="foto-cacamba" role="tabpanel" aria-labelledby="tab-aberta">
+          <img class="on" data-v="aberta" src="img/item-Cacamba.webp" alt="Carroceria aberta do TLUX vista de trás" loading="lazy">
+          <img data-v="bau" src="img/bau.jpg" alt="TLUX com baú branco, estacionado em área externa" loading="lazy">
+        </div>
+        <figcaption class="mono" id="legenda-cacamba" aria-live="polite">Foto real · carroceria 3050 × 1645 × 370 mm</figcaption>
       </figure>
     </div>
   </div>
@@ -410,7 +436,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
     <div class="cards">
       <article class="card rv">
         <div class="ph"><img src="img/galeria-5.webp" alt="" loading="lazy"></div>
-        <div class="card-body"><span class="mono">Caçamba</span><h3>Caçamba generosa</h3><p>3,05 m de comprimento para o que o seu dia exige.</p></div>
+        <div class="card-body"><span class="mono">Carroceria</span><h3>Carroceria generosa</h3><p>3,05 m de comprimento para o que o seu dia exige.</p></div>
       </article>
       <article class="card rv">
         <div class="ph"><img src="img/galeria-3.webp" alt="" loading="lazy"></div>
@@ -422,7 +448,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
       </article>
       <article class="card rv">
         <div class="ph"><img src="img/item-Freios-1.webp" alt="" loading="lazy"></div>
-        <div class="card-body"><span class="mono">Freios</span><h3>ABS nas 4 rodas</h3><p>Freada firme, com a caçamba cheia ou vazia.</p></div>
+        <div class="card-body"><span class="mono">Freios</span><h3>ABS nas 4 rodas <span class="sub">com assistente de partida em rampa</span></h3><p>Freada firme, com a carroceria cheia ou vazia.</p></div>
       </article>
     </div>
     <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
@@ -432,7 +458,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
 <!-- FOTO DE PÁGINA INTEIRA -->
 <section class="rua" id="rua">
   <div class="rua-img">
-    <video id="ruaVid" muted playsinline preload="none" poster="img/caminhao-poster.jpg?v=3" aria-label="Vídeo: a caçamba do TLUX vazia recebendo garrafões de água, vidros e madeira, um tipo de carga depois do outro" data-src="img/caminhao-carga.mp4?v=2"></video>
+    <video id="ruaVid" muted playsinline preload="none" poster="img/caminhao-poster.jpg?v=3" aria-label="Vídeo: a carroceria do TLUX vazia recebendo garrafões de água, vidros e madeira, um tipo de carga depois do outro" data-src="img/caminhao-carga.mp4?v=2"></video>
   </div>
   <div class="wrap rua-copy">
     <h2><span class="ln"><span>Aqui cabe</span></span><span class="ln"><span>o seu <em>negócio.</em></span></span></h2>
@@ -450,13 +476,12 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
         <p class="mono eyebrow rv">Cabine</p>
         <h2 style="margin-top:22px"><span class="ln"><span>A cabine do seu</span></span><span class="ln"><span>escritório.</span></span></h2>
       </div>
-      <p class="lead rv">Ar-condicionado, vidros elétricos e rádio AM/FM. Painel analógico claro: velocímetro, conta-giros, combustível e temperatura.</p>
+      <p class="lead rv">Ar-condicionado, vidros elétricos e som com bluetooth.</p>
     </div>
     <div class="bento">
       <figure class="tile t1 rv"><img src="img/galeria-7.webp" alt="Volante e painel do TLUX" loading="lazy"><figcaption class="mono">Cabine</figcaption></figure>
-      <figure class="tile t2 rv"><img src="img/galeria-9.webp" alt="Painel analógico com velocímetro e conta-giros" loading="lazy"><figcaption class="mono">Painel analógico</figcaption></figure>
       <figure class="tile t3 rv"><img src="img/galeria-8.webp" alt="Câmbio manual de 5 marchas" loading="lazy"><figcaption class="mono">Câmbio 5 marchas</figcaption></figure>
-      <figure class="tile t4 rv"><img src="img/galeria-10.webp" alt="Rádio AM/FM" loading="lazy"><figcaption class="mono">Rádio AM/FM</figcaption></figure>
+      <figure class="tile t4 rv"><img src="img/galeria-10.webp" alt="Som com bluetooth" loading="lazy"><figcaption class="mono">Som com bluetooth</figcaption></figure>
     </div>
   </div>
 </section>
@@ -472,7 +497,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
       <li class="rv">Ar-condicionado</li>
       <li class="rv">Direção elétrica</li>
       <li class="rv">Vidros elétricos</li>
-      <li class="rv">Rádio AM/FM</li>
+      <li class="rv">Som com bluetooth</li>
       <li class="rv">Carregador USB</li>
       <li class="rv">ABS nas 4 rodas</li>
     </ul>
@@ -491,7 +516,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
     <div>
       <p class="mono eyebrow">Fale com a gente</p>
       <h2 style="margin-top:22px"><span class="ln"><span>Veja o TLUX</span></span><span class="ln"><span>trabalhando</span></span><span class="ln"><span>para você.</span></span></h2>
-      <p class="lead rv">Deixe seus dados. Um consultor fala com você pelo WhatsApp.</p>
+      <p class="lead rv">Informe seus dados e um consultor da Motudo chama você no WhatsApp.</p>
     </div>
     <div>
       <form id="lead" novalidate>
@@ -516,14 +541,14 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
 
 <footer>
   <div class="wrap">
-    <p>A partir de R$ 111.990,00. Preço público sugerido, frete não incluso. Itens de série e especificações podem variar por versão. Imagens ilustrativas. Consulte um revendedor.</p>
-    <b>TLUX</b>
+    <p>A partir de R$ 119.990,00. Preço público sugerido, frete não incluso. Itens de série e especificações podem variar por versão. Imagens ilustrativas. Consulte um revendedor.</p>
+    <img class="foot-logo" src="img/logo-branca.png" alt="Motudo SRM" width="900" height="257" loading="lazy">
   </div>
 </footer>
 
-<a id="fab" class="fab" href="#contato" data-cta="fab" aria-label="Falar com um consultor">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>
-  <span>Falar com consultor</span>
+<a id="fab" class="fab" href="#contato" data-cta="whatsapp" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span>Chamar no WhatsApp</span>
 </a>
 
 <script>
@@ -531,7 +556,7 @@ footer b{color:#fff;font-family:var(--display);font-size:24px;letter-spacing:.06
    WHATSAPP: número da concessionária com DDI+DDD, só dígitos (ex.: "5581999999999").
    ENDPOINT: endereço do Apps Script da planilha (veja planilha-apps-script.gs).
    META_PIXEL_ID, GA4_ID, GTM_ID: IDs de rastreamento (só carrega o que estiver preenchido). */
-const CONFIG = { WHATSAPP: "", ENDPOINT: "https://script.google.com/macros/s/AKfycbyt2q7xMAOW5E-AeOaKO-ybI1jCfl7oYE18mC3aDQIPFiRasi0tE8lNLFDyGM91UHOf/exec", META_PIXEL_ID: "", GA4_ID: "", GTM_ID: "" };
+const CONFIG = { WHATSAPP: "5581979014977", ENDPOINT: "https://script.google.com/macros/s/AKfycbyt2q7xMAOW5E-AeOaKO-ybI1jCfl7oYE18mC3aDQIPFiRasi0tE8lNLFDyGM91UHOf/exec", META_PIXEL_ID: "", GA4_ID: "", GTM_ID: "" };
 
 const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -560,7 +585,6 @@ const fab=$('#fab');
 if(CONFIG.WHATSAPP){
   fab.href=`https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent('Olá! Tenho interesse no TLUX.')}`;
   fab.target='_blank';fab.rel='noopener';
-  $('span',fab).textContent='Chamar no WhatsApp';
 }
 
 /* entrada: não espera a página inteira; só as fontes (no máximo 1,2 s) */
@@ -572,6 +596,7 @@ function start(){
   document.body.classList.add('loaded');
   $$('.hero .ln').forEach(l=>l.classList.add('in'));
   $$('.hero .rv').forEach((f,i)=>setTimeout(()=>f.classList.add('in'),500+i*140));
+  setTimeout(()=>fab.classList.add('show'),900);
 }
 Promise.race([document.fonts?document.fonts.ready:Promise.resolve(),new Promise(r=>setTimeout(r,1200))]).then(start);
 setTimeout(start,2500);
@@ -597,8 +622,6 @@ function onScroll(){
   prog.style.transform=`scaleX(${doc>0?y/doc:0})`;
   menu.classList.toggle('hide',y>80&&y>lastY+4);
   if(y<lastY-4||y<80)menu.classList.remove('hide');
-  const ctaVisible=[...$$('[data-cta]:not(#fab)'),$('#sheet')].some(b=>{const r=b.getBoundingClientRect();return r.bottom>0&&r.top<H});
-  fab.classList.toggle('show',y>H*.8&&!ctaVisible&&$('#contato').getBoundingClientRect().top>H*.55);
   lastY=y;
   const r=man.getBoundingClientRect(), p=Math.min(1,Math.max(0,(H*.85-r.top)/(H*.5+r.height*.6)));
   const n=reduce?words.length:Math.round(p*words.length);
@@ -609,7 +632,7 @@ addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(o
 addEventListener('resize',onScroll);
 onScroll();
 
-/* vídeo da caçamba: carrega perto da tela, toca uma vez ao aparecer e termina com a caçamba cheia */
+/* vídeo da carroceria: carrega perto da tela, toca uma vez ao aparecer e termina com a carroceria cheia */
 const vid=$('#ruaVid');
 if(vid&&window.IntersectionObserver){
   let carregado=false;
@@ -626,6 +649,26 @@ if(vid&&window.IntersectionObserver){
     },{threshold:[0,.05,.5]}).observe(vid);
   }
 }
+
+/* carroceria: alterna entre aberta e fechada (baú), no mesmo espaço */
+(function(){
+  const fig=$('#figCacamba'); if(!fig)return;
+  const abas=$$('.fig-tabs button',fig), fotos=$$('.ph img',fig), leg=$('#legenda-cacamba'), painel=$('#foto-cacamba');
+  const textos={aberta:'Foto real · carroceria 3050 × 1645 × 370 mm',bau:'Baú · consulte condições e medidas'};
+  function ir(v){
+    abas.forEach(b=>{const on=b.dataset.v===v;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on)painel.setAttribute('aria-labelledby',b.id)});
+    fotos.forEach(i=>i.classList.toggle('on',i.dataset.v===v));
+    painel.classList.toggle('bau',v==='bau');
+    leg.textContent=textos[v];
+    try{window.dataLayer.push({event:'tlux_cacamba',tipo:v})}catch(_){}
+  }
+  abas.forEach((b,k)=>{
+    b.tabIndex=k===0?0:-1;
+    b.addEventListener('click',()=>ir(b.dataset.v));
+    b.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const n=abas[(k+(e.key==='ArrowRight'?1:abas.length-1))%abas.length];n.focus();ir(n.dataset.v)}});
+  });
+  fotos[0].classList.add('on');
+})();
 
 /* formulário */
 const campos=[['nome',v=>v.trim().length>1],['zap',v=>v.replace(/\D/g,'').length>=10],['cidade',v=>v.trim().length>1],['uso',v=>!!v]];
